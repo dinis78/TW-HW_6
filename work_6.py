@@ -55,7 +55,7 @@ n_1 = len(x)
 n_2 = len(y)
 d = np.mean(y) - np.mean(x) 
 print(d)
-d_o = np.var(x, ddof=1)+np.var(y, ddof=1)/2
+d_o = (np.var(x, ddof=1)+np.var(y, ddof=1))/2
 print(d_o)
 s = np.sqrt(d_o/n_1+d_o/n_2)
 print(s)
